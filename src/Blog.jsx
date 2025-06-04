@@ -16,7 +16,7 @@ const Blog = () => {
     const fetchBlogs = async () => {
       try {
         setLoading(true);
-        const response = await axios.get("http://localhost:5001/api/blogs");
+        const response = await axios.get("https://sheconnects-backend.onrender.com/api/blogs");
         setBlogs(response.data);
       } catch (err) {
         setError("Failed to fetch blogs");
@@ -105,7 +105,7 @@ const Blog = () => {
         setError("Please login to delete a post");
         return;
       }
-      await axios.delete(`http://localhost:5001/api/blogs/${id}`, {
+      await axios.delete(`https://sheconnects-backend.onrender.com/api/blogs/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
