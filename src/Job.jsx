@@ -19,7 +19,7 @@ const Job = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const res = await axios.get("http://localhost:5001/api/jobs");
+        const res = await axios.get("https://sheconnects-backend.onrender.com/api/jobs");
         setJobs(res.data);
         setFilteredJobs(res.data);
         setLoading(false);
@@ -49,7 +49,7 @@ const Job = () => {
   const handleAddJob = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5001/api/jobs", newJob);
+      const res = await axios.post("https://sheconnects-backend.onrender.com/api/jobs", newJob);
       alert("Job added successfully!");
       setJobs([...jobs, res.data.job]);
       setNewJob({ title: "", company: "", location: "", description: "", type: "full-time" });
