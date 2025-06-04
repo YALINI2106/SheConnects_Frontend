@@ -29,7 +29,7 @@ const ConsultDoc = () => {
     setError('');
     
     try {
-      const response = await axios.post('http://localhost:5001/api/appointments', {
+      const response = await axios.post('https://sheconnects-backend.onrender.com/api/appointments', {
         ...formData,
         appointmentType: 'mental-wellness'
       });
