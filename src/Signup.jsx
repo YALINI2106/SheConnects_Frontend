@@ -49,7 +49,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5001/api/signup", {
+      const response = await fetch("https://sheconnects-backend.onrender.com/api/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
