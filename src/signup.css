@@ -1,0 +1,160 @@
+/* signup.css */
+
+.signup-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.empowerment-section {
+  flex: 1;
+  background-color: #f8e1e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #333;
+  font-size: 3rem;
+}
+
+.empowerment-content {
+  max-width: 500px;
+  text-align: center;
+}
+
+.empowerment-content h1 {
+  font-size: 2.5rem;
+  color: #f9f8f8; /* Brand pink color */
+  margin-bottom: 2rem;
+}
+
+.empowerment-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #f1ecec;
+}
+
+.empowerment-quotes {
+  margin-top: 3rem;
+  text-align: center;
+  color:white;
+}
+
+.empowerment-quotes p {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: #f9f7f7;
+}
+
+.signup-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 2rem;
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.signup-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #d23c77;
+}
+
+.signup-button {
+  background-color: #e8442f;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+  background-color: #f26363;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #666;
+}
+
+.login-link a {
+  color: #d23c77;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .signup-page {
+    flex-direction: column;
+  }
+  
+  .empowerment-section, .signup-section {
+    padding: 1.5rem;
+  }
+  
+  .empowerment-content h1 {
+    font-size: 2rem;
+  }
+  
+  .empowerment-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .empowerment-quotes p {
+    font-size: 1rem;
+  }
+}

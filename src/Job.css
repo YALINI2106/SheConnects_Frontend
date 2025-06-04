@@ -1,0 +1,118 @@
+.job-page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+header p {
+  color: #666;
+}
+
+/* Search */
+.search-bar {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  padding: 0.7rem 1rem;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Job Form */
+.job-form {
+  background-color: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.job-form h3 {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.job-form input,
+.job-form textarea,
+.job-form select {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.job-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.job-form button {
+  background-color: #e98b2e;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.job-form button:hover {
+  background-color: #ea841e;
+}
+
+/* Job Cards */
+.job-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.job-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #d87127;
+}
+
+.job-card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.job-card p {
+  margin: 0.3rem 0;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .job-form, .job-card {
+    padding: 1rem;
+  }
+  
+  .job-form button {
+    width: 100%;
+  }
+}

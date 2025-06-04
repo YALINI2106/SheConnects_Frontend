@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+.login-page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.login-form h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  text-align: center;
+  position: static; /* Ensure it's not positioned absolutely */
+  padding: 2; /* Remove any default padding */
+}
+
+.empowerment-section {
+  flex: 1;
+  background-image: url('https://images.unsplash.com/photo-1621973856220-29115d9b5d29?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-width: 50%;
+}
+
+.empowerment-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 107, 107, 0.7);
+}
+
+.empowerment-content {
+  position: relative;
+  z-index: 2;
+  color: rgb(252, 249, 249);
+  padding: 3rem;
+  max-width: 80%;
+
+}
+
+.empowerment-content h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.empowerment-content h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.empowerment-quotes p {
+  font-size: 3.3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.login-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  min-width: 50%;
+  padding: 2rem;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+padding: 3rem 4rem; 
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Rest of your form styles remain the same */
+.form-group {
+  margin-bottom: 1.5rem;
+  
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.error-message {
+  color: #ff3333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #555;
+}
+
+.signup-link a {
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+  }
+  
+  .empowerment-section, .login-section {
+    min-width: 100%;
+    min-height: 50vh;
+  }
+  
+  .empowerment-content {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+  
+  .empowerment-content h1 {
+    font-size: 2.5rem;
+  }
+}
