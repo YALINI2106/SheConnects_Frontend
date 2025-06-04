@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./Blog.css";
+import "./blog.css";
 
 const Blog = () => {
   const [title, setTitle] = useState("");
