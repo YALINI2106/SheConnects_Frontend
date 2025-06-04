@@ -28,7 +28,7 @@ const Event = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get('http://localhost:5001/api/events');
+        const response = await axios.get('https://sheconnects-backend.onrender.com/api/events');
         setEvents(response.data);
         setFilteredEvents(response.data);
         setLoading(false);
@@ -57,7 +57,7 @@ const Event = () => {
 
   const handleRegister = async (eventId) => {
     try {
-      const response = await axios.post(`http://localhost:5001/api/events/${eventId}/register`, {
+      const response = await axios.post(`https://sheconnects-backend.onrender.com/api/events/${eventId}/register`, {
         userId: 'current-user-id'
       });
       setRegisteredEvents([...registeredEvents, eventId]);
@@ -75,7 +75,7 @@ const Event = () => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5001/api/events', formData);
+      const response = await axios.post('https://sheconnects-backend.onrender.com/api/events', formData);
       setEvents([...events, response.data.event]);
       setFormData({
         title: '',
